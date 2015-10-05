@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- Theme applied to the application or activity -->
+    <style name= "CustomActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Support Library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!--Action bar styles -->
+    <style name="MyActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/abc_item_background_holo_dark</item>
+
+        <!-- support library compatibility -->
+        <item name="background">@drawable/abc_item_background_holo_dark</item>
+    </style>
+
+</resources>

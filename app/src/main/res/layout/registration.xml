@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/StoryRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="@string/storyTold"
+        android:textAppearance="@color/orange"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_FirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/StoryRegister"
+        android:layout_marginTop="20dp"
+        android:text="@string/firstName"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBaseline="@+id/tv_FirstName"
+        android:layout_toRightOf="@+id/tv_FirstName" />
+
+    <TextView
+        android:id="@+id/tv_LastName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_FirstName"
+        android:layout_marginTop="20dp"
+        android:text="@string/lastName"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_LastName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_LastName"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/tv_LastName" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_LastName"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBaseline="@+id/tv_email"
+        android:layout_toRightOf="@+id/tv_FirstName"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/tell"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
