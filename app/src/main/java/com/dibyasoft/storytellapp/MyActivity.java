@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
+import android.sqlite3;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,6 +21,7 @@ import android.widget.GridView;
 import android.widget.ListView;
 
 import java.io.InputStream;
+import java.sqlite3;
 
 
 public class MyActivity extends ActionBarActivity {
@@ -171,6 +173,7 @@ public class MyActivity extends ActionBarActivity {
     public void actionCategoryClickHandler(MenuItem item) {
 
         Intent intent = new Intent(this, CategoriesGrid.class);
+        this.save(intent);
         startActivity(intent);
 //        MyActivity I = new MyActivity();
 //        I.setContentView(R.layout.main);
